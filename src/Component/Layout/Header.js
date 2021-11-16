@@ -1,30 +1,30 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
-const Header = () =>{
-    return(
-        <nav className="navbar  navbar-expand-lg navbar-dark bg-primary">
-        <Link className="navbar-brand pl-4" href="/">Crud Application</Link>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav " >
-            <li className="nav-item ">
-              <Link to="/" className="nav-link active" >Home </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link" >About</Link>
-            </li>
-            <li className="nav-item">
-              <Link o="/contact" className="nav-link" t>Contact</Link>
-            </li>
-          
-          </ul>
-        </div>
-      </nav>
-    )
+const Header = () => {
+  return (
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <Link to="/" class="navbar-brand" >CRUD Application</Link>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-dark">
+          <li class="nav-item active">
+            <Link class="nav-link" to="/home">Home</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/about">About</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/contact">Contact</Link>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  )
 }
 
 export default Header;
